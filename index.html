@@ -6,36 +6,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chats</title>
     <style>
-        body {
-            width: 100%;
-            height: 100%;
+
+        * {
             margin: 0;
             padding: 0;
-            overflow:hidden;
+            border: none;
+        }
+
+        body {
+            width: 99vw;
+            height: 99vh;
+            background-color: cadetblue;
+            overflow: auto;
             display:block;
             box-sizing: border-box;
         }
 
-        
-        
-/*         iframe {
-            position: absolute;
-            border: none;
-            width: 50% !important;
-            height: 50% !important;
-        } */
-        
-/*         .glimesh_chat {
-            border: none;
+        .big_chat_container {
+            height: 60%;
+            width: 100%;
+            background-color: black;
+        }
+        .big_chat_child_container {
+            float: left;
+            height: 100%;
             width: 50%;
-            height: 25%;
-        } */
-        
-        .twitch_chat {
-            border: none;
-            width: 50%;
+        }
+        .big_chat {
+            width: 100%;
             height: 50%;
         }
+
+        .small_chat_container {
+            height: 40%;
+            width: 100%;
+            background-color: white;
+        }
+        .small_chat_child_container {
+            float: left;
+            height: 100%;
+            width: 33%;
+            background-color: yellowgreen;
+        }
+        .small_chat {
+            width: 100%;
+            height: 50%;
+        }
+        
+        
+        iframe {
+            padding: 0;
+            margin: 0;
+            border: 0;
+        }
+        
+        
         
     </style>
 </head>
@@ -43,6 +68,33 @@
 <!--     <iframe class="glimesh_chat" src="https://glimesh.tv/Eyunoia/chat"></iframe> -->
     <!-- <iframe class="twitch_chat" src="https://www.twitch.tv/embed/Eyunoia/chat?parent=eyunoia.github.io&darkpopout"></iframe> -->
 
-    <iframe class="twitch_chat" src="https://stackoverflow.com/questions/17921482/making-a-2x2-grid-with-divs-fullscreen-in-html"></iframe>
+    <div class="big_chat_container">
+        <div class="big_chat_child_container">
+            <iframe frameBorder="0" class="big_chat" src="https://www.twitch.tv/embed/Eyunoia/chat?parent=eyunoia.github.io&darkpopout"></iframe>
+            <iframe frameBorder="0" class="big_chat" src="https://stackoverflow.com/questions/17921482/making-a-2x2-grid-with-divs-fullscreen-in-html"></iframe>
+        </div>
+
+        <div class="big_chat_child_container">
+            <iframe frameBorder="0" class="big_chat" src="https://stackoverflow.com/questions/17921482/making-a-2x2-grid-with-divs-fullscreen-in-html"></iframe>
+            <iframe frameBorder="0" class="big_chat" src="https://stackoverflow.com/questions/17921482/making-a-2x2-grid-with-divs-fullscreen-in-html"></iframe>
+        </div>
+        
+    </div>
+
+    <div class="small_chat_container"> 
+        <div class="small_chat_child_container">
+            <iframe frameBorder="0" class="big_chat" src="https://stackoverflow.com/questions/17921482/making-a-2x2-grid-with-divs-fullscreen-in-html"></iframe>
+            <iframe frameBorder="0" class="big_chat" src="https://stackoverflow.com/questions/17921482/making-a-2x2-grid-with-divs-fullscreen-in-html"></iframe>
+        </div>
+        <div class="small_chat_child_container" style="width: 34%;">
+            <iframe frameBorder="0" class="big_chat" src="https://stackoverflow.com/questions/17921482/making-a-2x2-grid-with-divs-fullscreen-in-html"></iframe>
+            <iframe class="big_chat" src="https://stackoverflow.com/questions/17921482/making-a-2x2-grid-with-divs-fullscreen-in-html"></iframe>
+        </div>
+        <div class="small_chat_child_container">
+            <iframe frameBorder="0" class="big_chat" src="https://stackoverflow.com/questions/17921482/making-a-2x2-grid-with-divs-fullscreen-in-html"></iframe>
+            <iframe frameBorder="0" class="big_chat" src="https://stackoverflow.com/questions/17921482/making-a-2x2-grid-with-divs-fullscreen-in-html"></iframe>
+        </div>
+    </div>
+    
 </body>
 </html>
